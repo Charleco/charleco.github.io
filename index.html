@@ -3,53 +3,237 @@
 <html lang="en" xmlns="">
 <head>
     <meta charset="utf-8" />
-    <title>Personal Website</title>
+    <title>Charleco</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-  <!-- ADD NAVBAR-->
-  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">Charleco</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#">Projects</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
   <!-- Parrallax Img?-->
   <section id="hero">
+    <img src="img/headshot.png"class="hero-headshot">
     <h1>Christopher Charles</h1>
     <p>Developer</p>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Projects</h2>
+        </div>
+        <div class = "col-12">
+          <img src="img/projects/solarLander.png"  data-bs-toggle="modal" data-bs-target="#solarModal"> 
+        </div>
+        
+        <div class="modal fade" id="solarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Solar Lander</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="icon-wrap">
+                  <a href="https://github.com/Charleco/Solar-Lander" target="_blank">
+                    <i class="bi bi-github modal-icon"></i>
+                </a>
+                </div>
+                <div class="image-wrap">
+                  <img src="img/projects/modals/solarLander.png">
+                </div>
+                <div class="text-wrap">
+                  <p><b>About: </b></p>
+                  <p><b>Language: </b></p>
+                  <p><b>Software: </b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "col-12">
+          <img src="img/projects/mouseMaze.png"data-bs-toggle="modal" data-bs-target="#mouseModal"> 
+        </div>
+
+        <div class="modal fade" id="mouseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Mouse Maze</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="icon-wrap">
+                  <a href="https://github.com/Charleco/MouseMaze" target="_blank">
+                    <i class="bi bi-github modal-icon"></i>
+                </a>
+                </div>
+                <div class="image-wrap">
+                  <img src="">
+                </div>
+                <div class="text-wrap">
+                  <p><b>About: </b></p>
+                  <p><b>Language: </b></p>
+                  <p><b>Software: </b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "col-12">
+          <img src="img/projects/particleSim.png" data-bs-toggle="modal" data-bs-target="#particleModal"> 
+        </div>
+
+        <div class="modal fade" id="particleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Particle Sim</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="icon-wrap">
+                  <a href="https://github.com/Charleco/Particle-Sim" target="_blank">
+                    <i class="bi bi-github modal-icon"></i>
+                </a>
+                </div>
+                <div class="image-wrap">
+                  <img src="">
+                </div>
+                <div class="text-wrap">
+                  <p><b>About: </b></p>
+                  <p><b>Language: </b></p>
+                  <p><b>Software: </b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "col-12">
+          <img src="img/projects/particleSim2.png" data-bs-toggle="modal" data-bs-target="#particle2Modal"> 
+        </div>
+
+        <div class="modal fade" id="particle2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Particle Sim 2</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="icon-wrap">
+                  <a href="https://github.com/Charleco/Particle-Sim2" target="_blank">
+                    <i class="bi bi-github modal-icon"></i>
+                </a>
+                </div>
+                <div class="image-wrap">
+                  <img src="">
+                </div>
+                <div class="text-wrap">
+                  <p><b>About: </b></p>
+                  <p><b>Language: </b></p>
+                  <p><b>Software: </b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class = "col-12">
+            <img src="img/projects/blackJack.png" data-bs-toggle="modal" data-bs-target="#blackJackModal"> 
+        </div>
+
+        <div class="modal fade" id="blackJackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">BlackJack</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="icon-wrap">
+                  <a href="https://github.com/Charleco/BlackJack" target="_blank">
+                    <i class="bi bi-github modal-icon"></i>
+                </a>
+                </div>
+                <div class="image-wrap">
+                  <img src="">
+                </div>
+                <div class="text-wrap">
+                  <p><b>About: </b></p>
+                  <p><b>Language: </b></p>
+                  <p><b>Software: </b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "col-12">
+          <img src="img/projects/qudMycologist.png" data-bs-toggle="modal" data-bs-target="#qudModal"> 
+        </div>
+  
+        <div class="modal fade" id="qudModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Qud Mycologist</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="icon-wrap">
+                  <a href="https://github.com/Charleco/Qud-Mycologist" target="_blank">
+                    <i class="bi bi-github modal-icon"></i>
+                  </a>
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3022865963" target="_blank">
+                  <i class="bi bi-steam modal-icon"></i>
+                  </a>
+                </div>
+                <div class="image-wrap">
+                  <img src="">
+                </div>
+                <div class="text-wrap">
+                  <p><b>About: </b></p>
+                  <p><b>Language: </b></p>
+                  <p><b>Software: </b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    <div class="mb-4"></div>
+    
+    
   </section>
 
   <section id="skills">
@@ -61,71 +245,52 @@
           <h2>Skills</h2>
         </div>
         <div class = "col-md-3 col-sm-6">
-          
+          <img src="img/skills/java.png">
+          <p> Java</p>
         </div>
         <div class = "col-md-3 col-sm-6">
-          
+          <img src="img/skills/html.png">
+          <p> HTML</p>
         </div>
         <div class = "col-md-3 col-sm-6">
-          
+          <img src="img/skills/css.png">
+          <p> CSS</p>
         </div>
-        
-        <div class = "col-md-3 col-sm-6">
           
+        <div class = "col-md-3 col-sm-6">
+          <img src="img/skills/blender.png">
+          <p> Blender</p>
+        </div>
+        <div class = "col-md-3 col-sm-6">
+          <img src="img/skills/csharp.webp">
+          <p> C#</p>
+        </div>
+        <div class = "col-md-3 col-sm-6">
+          <img src="img/skills/python.png">
+          <p> Python</p>
+        </div>
+        <div class = "col-md-3 col-sm-6">
+          <img src="img/skills/office.png">
+          <p> Microsoft Work Suite</p>
+        </div>
+        <div class = "col-md-3 col-sm-6">
+          <img src="img/skills/google.png">
+          <p> Google Tool Suite</p>
         </div>
     </div>
     <div class="mb-4"></div>
   </section>
 
-  <section id="projects">
-    
-    <div class="container">
-        
-      <div class="row">
-        <div class="col-12">
-          <h2>Projects</h2>
-        </div>
-        <div class = "col-md-3 col-sm-6">
-          <div class="image-container">
-            <img src="img/SolarLander.JPG">
-            <div class="overlay">
-              <p>SolarLander</p>
-            </div>
-          </div>
-          
-        </div>
-        <div class = "col-md-3 col-sm-6">
-          <div class="image-container">
-            <img src="img/blackjack.JPG">
-            <div class="overlay">
-              <p>BlackJack</p>
-            </div>
-          </div>
-        </div>
-        <div class = "col-md-3 col-sm-6">
-          <div class="image-container">
-            <img src="img/MouseMaze.JPG">
-            <div class="overlay">
-              <p>MouseMaze</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class = "col-md-3 col-sm-6">
-          <div class="image-container">
-            <img src="img/ParticleSim.JPG">
-            <div class="overlay">
-              <p>ParticleSim</p>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="mb-4"></div>
+  <section id="contact">
+    <h2>Contact</h2>
   </section>
-
+  
   <section id="footer">
     <p>© 2024 Christopher Charles</p>
   </section>
+
+  </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
 </body>
 </html>
