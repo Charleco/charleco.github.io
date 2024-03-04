@@ -42,10 +42,13 @@ body, html {
 /* Projects Section*/
 #projects{
   text-align: center;
+  align-items: center;
 }
 #projects img {
-border: #7d6ec4 2px solid;
-border-radius: 5px;
+  width:100%;
+  height: 100%;
+  border: #7d6ec4 2px solid;
+  border-radius: 5px;
 }
 
 .modal{
@@ -103,8 +106,12 @@ text-align: left;
 /* Contact Section */
 #contact{
   text-align: center;
+  align-items: center;
 }
-
+.contact-icon{
+  font-size: 4em;
+  color:#81c2d2;
+}
 /* Footer Section */
 #footer{
   background-color: #81c2d2;
