@@ -38,6 +38,8 @@ body, html {
   margin-bottom: 20px;
 }
 
+
+
 /* Projects Section*/
 #projects{
   text-align: center;
@@ -86,7 +88,6 @@ font-size: 2em;
 flex: 0 0 auto;
 margin-right: 10px;
 }
-
 .text-wrap {
 flex: 1;
 text-align: left;
@@ -96,10 +97,13 @@ text-align: left;
 #skills{
     text-align: center;
 }
-#skills img {
-
-  width: 200px;
-  height: 200px;
+#skills .col-12{
+  margin:20px;
+}
+#skills .skill-icon{
+  font-size: 10em;
+  color:#81c2d2;
+  margin:5px;
 }
 
 /* Contact Section */
@@ -114,6 +118,7 @@ text-align: left;
 .contact-icon:hover{
   color:white;
 }
+
 /* Footer Section */
 #footer{
   background-color: #81c2d2;
