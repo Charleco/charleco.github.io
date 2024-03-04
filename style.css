@@ -9,12 +9,11 @@ body, html {
     background-color: #141425;
     
 }
-.nav-link,
-.navbar-brand,
-.navbar-link-disabled,
-.nav-link active {
-
+.nav-link,.navbar-brand {
   color:white;
+}
+.navbar .nav-link:hover,.navbar-brand:hover {
+  color: #7d6ec4; /* Change to your desired hover color */
 }
 
 /* Hero Section */
@@ -111,6 +110,9 @@ text-align: left;
 .contact-icon{
   font-size: 4em;
   color:#81c2d2;
+}
+.contact-icon:hover{
+  color:white;
 }
 /* Footer Section */
 #footer{
