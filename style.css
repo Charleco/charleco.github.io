@@ -5,17 +5,28 @@ body, html {
     background-color: #141425;
     color: white;
 }
+/* Navbar Section */
 .navbar {
     background-color: #141425;
-    
 }
 .nav-link,.navbar-brand {
   color:white;
 }
-.navbar .nav-link:hover,.navbar-brand:hover {
-  color: #7d6ec4; /* Change to your desired hover color */
+.navbar .nav-link:hover,.navbar-brand:hover{
+  color: #7d6ec4;
 }
-
+.navbar .navbar-toggler{
+  border-color: white;
+}
+.navbar .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar .navbar-toggler:hover{
+  border-color:#7d6ec4;
+}
+.navbar .navbar-toggler-icon:hover{
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%237d6ec4' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 /* Hero Section */
 #hero {
   position: relative;
@@ -50,6 +61,9 @@ body, html {
   height: 100%;
   border: #7d6ec4 2px solid;
   border-radius: 5px;
+}
+#projects .projimg:hover{
+  border-color:#81c2d2;
 }
 
 .modal{
@@ -96,6 +110,7 @@ text-align: left;
 /* Skills Section */
 #skills{
     text-align: center;
+    align-items: center;
 }
 #skills .col-12{
   margin:20px;
